@@ -23,8 +23,8 @@ Generate static several sites from same nuxt instance with only one cli param
 	```
 - Edit **env** property in **nuxt.config.js**
 	 ```json		
-	 env:  {
-		tenant: process.env.TENANT ||  "default"
+	 "env":  {
+		"tenant": "process.env.TENANT ||  'default'"
 	},
 	```
 
