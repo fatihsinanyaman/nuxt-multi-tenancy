@@ -1,0 +1,19 @@
+{
+  "name": "multi-tenant",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env TENANT=$npm_config_tenant nuxt",
+    "build": "cross-env TENANT=$npm_config_tenant nuxt build",
+    "start": "cross-env TENANT=$npm_config_tenant nuxt start",
+    "generate": "cross-env TENANT=$npm_config_tenant nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "cross-env": "^7.0.3"
+  }
+}
